@@ -94,3 +94,97 @@ header{
     font-weight: 400;
     font-style: normal;
 }
+
+/* ----------------------------
+   Responsive Design Starts Here
+-------------------------------*/
+
+/* Tablets and small screens */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin: 0 0 15px 0;
+    font-size: 1.5rem;
+  }
+
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navigation a {
+    margin: 5px 5px 5px 0;
+    padding: 5px 10px;
+  }
+
+  #text {
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .sec {
+    padding: 60px 30px;
+  }
+
+  .sec h2 {
+    font-size: 2.2rem;
+  }
+
+  .sec p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Phones and very small screens */
+@media (max-width: 480px) {
+  header {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+  }
+
+  .navigation a {
+    font-size: 0.9rem;
+    margin: 3px 3px 3px 0;
+    padding: 4px 8px;
+  }
+
+  #text {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .sec {
+    padding: 40px 20px;
+  }
+
+  .sec h2 {
+    font-size: 1.8rem;
+  }
+
+  .sec p {
+    font-size: 1rem;
+  }
+
+  .parallax img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  #leaf,
+  #plant {
+    display: none;
+  }
+}
